@@ -2,14 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Navbar from '../components/Navbar'
 
 import './index.css'
+
 
 const Header = () =>
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#20130C',
       marginBottom: '1.45rem',
+      display: 'flex',
+      textAlign: 'center'
     }}
   >
     <div
@@ -19,7 +23,7 @@ const Header = () =>
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 'auto', marginBottom: '1.45rem'}}>
         <Link
           to="/"
           style={{
@@ -27,16 +31,18 @@ const Header = () =>
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          V. Picone
         </Link>
       </h1>
+      <Navbar />
     </div>
+    
   </div>
 
 const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Vince Picone - Portfolio"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
