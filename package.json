@@ -16,6 +16,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "publish": "rm -rf public/*.html && gatsby build && now public/",
     "build": "gatsby build",
     "develop": "gatsby develop -H $IP -p $PORT",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",

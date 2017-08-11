@@ -1,5 +1,5 @@
 import React from 'react'
-//import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Navbar from '../components/Navbar'
@@ -59,8 +59,8 @@ const TemplateWrapper = ({ children }) =>
     </div>
   </div>
 
-// TemplateWrapper.propTypes = {
-//   children: PropTypes.func,
-// }
+TemplateWrapper.propTypes = {
+  children: PropTypes.func,
+}
 
 export default TemplateWrapper

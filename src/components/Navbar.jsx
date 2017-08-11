@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 import drop from './tint-drop.svg'
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link)
+`
 	background: #20130C;
 	color: lightgrey;
 	transition: background 0.6s;
@@ -24,20 +25,21 @@ const StyledLink = styled(Link)`
 	text-decoration: none;
 `
 
-const Icon = styled.img`height: 100px;`
+const Icon = styled.img `height: 100px;`
 
-export default props => {
-  return (
-    <div>
-      <StyledLink to="/projects/" activeClassName="primary">
-        projects
-      </StyledLink>
-      <StyledLink to="/index/" exact activeClassName="primary">
-        about
-      </StyledLink>
-      <StyledLink to="/connect/" activeClassName="primary">
-        connect
-      </StyledLink>
-    </div>
-  )
-}
+
+const Navbar = () =>
+  <div>
+    <StyledLink to="/projects/" activeClassName="primary">
+      projects
+    </StyledLink>
+    <StyledLink to="/" exact activeClassName="primary">
+      about
+    </StyledLink>
+    <StyledLink to="/connect/" activeClassName="primary">
+      connect
+    </StyledLink>
+  </div>
+
+
+export default Navbar;
