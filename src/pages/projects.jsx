@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
+import React from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
 
 const Visit = styled.a`
   background: #20130c;
@@ -21,15 +21,15 @@ const Visit = styled.a`
   border: 2px solid #20130c;
   border-radius: 4px;
   text-decoration: none;
-`
+`;
 
 const Title = styled.h2`
   text-align: center;
   margin-top: 20px;
-`
+`;
 
 const ProjectsPage = () =>
-  <div style={{ margin: 'auto', maxWidth: '550px', marginTop: '60px' }}>
+  <div style={{ margin: "auto", maxWidth: "700px", marginTop: "60px" }}>
     <Title>
       <Visit href="https://chrome.google.com/webstore/detail/sorry-tennessee/pnfibhfelcbokechjfmghnmgbchpijaj">
         Sorry TN
@@ -37,7 +37,7 @@ const ProjectsPage = () =>
     </Title>
     <p>
       As seen in the Austin Statesman, my friend's text messages, and my Mom's
-      refrigerator.{' '}
+      refrigerator.{" "}
     </p>
     <p>
       Removes Tennessee from most drop down menus across the web for the greater
@@ -82,6 +82,6 @@ const ProjectsPage = () =>
       <strong>Tools</strong> React, react-router, material-ui, react-collapse,
       and Now for deployment.
     </p>
-  </div>
+  </div>;
 
-export default ProjectsPage
+export default ProjectsPage;
