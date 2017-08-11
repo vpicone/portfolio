@@ -1,11 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Navbar from '../components/Navbar'
 
 import './index.css'
-
 
 const Header = () =>
   <div
@@ -13,7 +12,7 @@ const Header = () =>
       background: '#20130C',
       marginBottom: '1.45rem',
       display: 'flex',
-      textAlign: 'center'
+      textAlign: 'center',
     }}
   >
     <div
@@ -23,7 +22,7 @@ const Header = () =>
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 'auto', marginBottom: '1.45rem'}}>
+      <h1 style={{ margin: 'auto', marginBottom: '1.45rem' }}>
         <Link
           to="/"
           style={{
@@ -36,7 +35,6 @@ const Header = () =>
       </h1>
       <Navbar />
     </div>
-    
   </div>
 
 const TemplateWrapper = ({ children }) =>
@@ -61,8 +59,8 @@ const TemplateWrapper = ({ children }) =>
     </div>
   </div>
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
+// TemplateWrapper.propTypes = {
+//   children: PropTypes.func,
+// }
 
 export default TemplateWrapper
